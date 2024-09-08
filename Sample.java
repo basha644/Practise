@@ -4,7 +4,7 @@ package Practise;
     public static void main(String[] args) {
         System.out.println("Welcome to java");       
          System.out.println("Second line");
-         System.out.println("new branch");
+         System.out.println("new ");
 
 
     }
