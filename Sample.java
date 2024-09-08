@@ -7,5 +7,6 @@ package Practise;
          System.out.println("new branch");
 
 
+        System.out.println("Wlcome to java");
     }
 }
