@@ -1,0 +1,49 @@
+String is treated as an Object in Java.
+
+String is a collection of characters within double quotes " " is considered as String Object in Java.
+
+Anything and everything within double quotes " " is treated as String Object.
+( " "  , " 123", "A", "@#$", "Telusko" )
+
+
+There are 2 types of String Objects.
+
+1. Immutable String. --> ( String ) class is sed to create Immutable String Object.
+Why string is immutable?
+
+2. Mutable String. --> (StringBuffer , StringBuilder) classes are used to create Mutable String Object.
+
+Immutable String Object is such an Object which cannot be changed once it's created.
+Mutable String Object is such an Object which can be changed once is created.
+
+There are 2 usual ways to create Immutable String Object :
+
+String s="Telusko";  ---> String Constant pool of heap area( Only Once) --> Duplicates are not allowed
+
+String s=new String("Telusko"); --> Heap area and refrence is referring to heap area String Object --> One copy also will be mainated on SCP my JVM with implicit references ( Hence new keyword --> 2 string objects) 00 refer class recordings and board work for more.
+- one copy of the object will be created in scp and implicit references will be which is maintained by JVM
+-Why, bcz JVM and java has been designed way that whenver we are creating string(literal/new) in java there is must and should be that object in SCP.
+- The nature of new keyword is memory has to get allocate in heap area and the reference will refering to heap area.
+
+-Garbage collector keep on checking heap area whether there is no reference it will be goes to GC detroy that one.But it is not collect SCP object even reference available or not.
+ SCP memory reallocated at the time JVM shutdown.
+-The SCP itself is managed by the JVM and remaing all are managed by GC. 
+Note: refer live class recordings and board work for better clarity. 
+
+Ways to compare String :
+
+== -> References of Strings(addresses) are compared
+equals() --> actual String Object(content) is compared
+ equalsIgnoreCase() --> actual String Object will be compared ignoring case sensitivity
+
+compareTo() --> String objects are compared lexicographically ( char by char) by considering dec rep of each char. 
+
+Note : We have discussed more than this key points in live class. Kindly refer live class recordings and board work.
+
+
+
+
+
+
+
+

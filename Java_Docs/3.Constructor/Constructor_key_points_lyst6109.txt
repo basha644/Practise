@@ -1,0 +1,31 @@
+--> Constructor is a special type of method where the name is same as class name
+-->Constructor can be reffered as special type of setter whose name is same as that of a class name and it is invocked during Object creation.
+   Also it doesn't have any explicit return type.
+
+--> If there is a call to Constructor and Programmer has not included any Constructor in a class then JavaC
+    Would include a default Constructor.(Zero parametrized Constructor)
+
+--> However if programmer has included any Constructor, whther is parametrized or zero parametirzed
+    then javaC would not include any default Constructor.
+
+--> Having more than One Constructor with Different parameters within a same class can be reffered as Constructor Overloading
+
+--> If there are any statements are to be executed the moment we create object of a class than we must include that within Constructor bcz Constructor is invocked when we create an Object.
+
+
+--> In Every Constructor the first statement, there would be super() call by default. If programmer is included explicitly this() then super() not possible.
+    Because in a Constructor first statement either we can have super() or we can have this() but not the both.
+
+--> Constructor chaining refers to process of one Constructor calling another Constructor. This can be achieved using super() and this(). 
+
+--> super() is used to call parent class Constructor
+--> Super keyword always refer to the parent class fields(super.name),methods(super.method()), Constructors(super())
+
+--> this() is used to call Constructor within same class.
+--> this keyword always refer to the preseny class fields(this.name),methods(this.method()), Constructors(this())
+============================================================================================================
+--> In Inheritance while creating child object(If constructor is available) at that time, first it calls the parent class constructor(because of super()) after it will be execute.
+
+Main method can be overloaded in java. However JVM would invoke only a main method which is having String[]args as parameter.
+
+Whenever program start at that time first loaded static fields, static block after that main method.
