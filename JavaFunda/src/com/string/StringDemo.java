@@ -38,6 +38,8 @@ public class StringDemo {
 		System.out.println(d);
 //		System.out.println("s5:"+s5);
 		System.out.println("s6:"+s6);
+				System.out.println("new "+s6);
+		
 
 
 	}
