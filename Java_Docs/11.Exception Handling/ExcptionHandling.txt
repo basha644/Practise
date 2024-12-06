@@ -1,0 +1,18 @@
+ExcptionHandling
+
+which occures to runtime wihch results abnormal termination of the application
+
+Difference between final, finally, and finalize:
+Final:
+Final is the modifier applicable for class, methods and variables.
+If a class declared as the final then child class creation is not possible.
+If a method declared as the final then overriding of that method is not possible.
+If a variable declared as the final then reassignment is not possible.
+Finally:
+It is the block always associated with try catch to maintain clean up code which should be executed always irrespective of whether exception raised or not raised and whether handled or not handled.
+Finalize:
+It is a method which should be called by garbage collector always just before destroying an object to perform cleanup activities.
+Note:
+To maintain clean up code faunally block is recommended over finalize() method because we can't expect exact behavior of GC.
+
+
