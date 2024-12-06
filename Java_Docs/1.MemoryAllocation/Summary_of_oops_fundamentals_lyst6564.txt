@@ -14,7 +14,7 @@ Here,
 1.Reference class : like what type of data/datatype we are taking/allowing. Only this class & parent one methods are allowable.
 2.Object reference : By using this refference we can call global variable,method
 3.storage allocation: whenever we call new keyword at that time new storage is allocated for that object
-4.constructor of that class like default/parameterized
+4.constructor of that class like default/parameterized for setting the values  to variables
 whenever object creation at that time compiler checks is constructor is available or not,
 If not Compiler provides deafault constructor otherwise it uses available constructor  
 
@@ -23,6 +23,7 @@ While object creation first [new Customer();] will be intiated.
 
 
 Instance variable --
+  -> creat Instance variable when the varaiable to represent that class, otherwise go with local variable
   -> Created directly within a class
   -> Memory allocated inside heap(Within object)
   -> Default values are assigned
@@ -44,7 +45,9 @@ Local Variables --
 --> When ever we call a method or a block to execute then one stack will be created within stack atrea
 ---> when ever that method body or block body execution is over that stack will be deallocated from stack area
  
-We can write methods in Java in four diffrent ways based on needs refer class board notes for same;
+We can write methods in Java in four different ways based on needs refer class board notes for same;
+
+ASCII stands for American Standard Code for Information Interchange and it's a character encoding system which assigns a unique numerical value to each character, including letters, numbers, punctuation marks, and other symbols.
 
 
 

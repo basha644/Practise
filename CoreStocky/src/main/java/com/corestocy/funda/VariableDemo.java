@@ -3,9 +3,9 @@ package com.corestocy.funda;
 public class VariableDemo {
 
 	/*
-	 * Instance/Global variable Class level variables Storage Area: Heap After main
-	 * method while object creation Ist global variables will be loaded with default
-	 * values.
+	 * Instance variable Class level variables Storage Area: Heap After main
+	 * method while object creation Ist Instance variables will be loaded with default
+	 * values in heap area.
 	 */
 	int num;
 	String country;
@@ -20,6 +20,7 @@ public class VariableDemo {
 	}
 
 	public static void main(String[] args) {
+//		 for main method one thread is created in stack area, Inside all the below operations are happen
 
 		/*
 		 * object created in heap area without reference. Next If there is any instance
@@ -33,7 +34,7 @@ public class VariableDemo {
 		 * VariableDemo: Class name/Type of data 
 		 * vd: objectReference name/ Local reference variable. 
 		 * new: Memory allocation in heap area/ to initialize the memory 
-		 * VariableDemo():Object holding class name
+		 * VariableDemo():Object holding class name/ constructor for setting the variable default/stored values
 		 */
 		VariableDemo vd = new VariableDemo();
 		/*
@@ -44,9 +45,10 @@ public class VariableDemo {
 		vd.play();
 		System.out.println("Global variable default int value: " + vd.num);
 		System.out.println("Global variable default String value: " + vd.country);
-		VariableDemo vd1 = new VariableDemo(); // in vd1 object a separate set of global variable values will be stored
-		VariableDemo vd2 = new VariableDemo(); // in vd2 object a separate set of global variable values will be stored
-		// In this way for each object a separate set of global variable values will be stored individually.
+		VariableDemo vd1 = new VariableDemo(); // in vd1 object a separate set of Instance variable values will be stored
+		VariableDemo vd2 = new VariableDemo(); // in vd2 object a another set of Instance variable values will be stored
+		// In this way for each object a separate set of Instance variable values will be stored individually.
+		// But static variable case only one set will be among all objects not individually separate set
 
 	}
 

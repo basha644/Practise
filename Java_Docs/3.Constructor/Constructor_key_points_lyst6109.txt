@@ -1,5 +1,9 @@
 --> Constructor is a special type of method where the name is same as class name
--->Constructor can be reffered as special type of setter whose name is same as that of a class name and it is invocked during Object creation.
+
+--> Main responsibility of default constructor is to assign default values to the newly created objects.
+--> Main aim of the parameterized constructors is to assign user-fed values to the instance variables of newly created objects.
+
+-->Constructor can be reffered as special type of setter whose name is same as that of a class name and it is invoked during Object creation.
    Also it doesn't have any explicit return type.
 
 --> If there is a call to Constructor and Programmer has not included any Constructor in a class then JavaC
@@ -29,3 +33,5 @@
 Main method can be overloaded in java. However JVM would invoke only a main method which is having String[]args as parameter.
 
 Whenever program start at that time first loaded static fields, static block after that main method.
+
+

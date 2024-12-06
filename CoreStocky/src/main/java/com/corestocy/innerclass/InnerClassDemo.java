@@ -10,7 +10,7 @@ class A{
 		System.out.println("Member Inner class");
 	}
 }
- //Generally static keyword is not allow in class level. Itis applicable for only innerclass.
+ //Generally static keyword is not allow in class level. It is applicable for only innerclass.
 static class C{
 	void see() {
 		System.out.println("Static Inner class");

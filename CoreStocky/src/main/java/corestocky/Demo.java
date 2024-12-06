@@ -1,18 +1,37 @@
 package corestocky;
 
-public class Demo {
-	public static void main(String[] args) {
-		for (int i = 0; i <= 10; i++) {
-			System.out.println("i :" + i);
-			for (int j = 1; j <= 10; j++) {
-				System.out.println("j :" + j);
-				while (i == j) {
+import java.util.Arrays;
 
-					System.out.println("matching:  " + i + j);
-					break;
-				}
-			}
+public class Demo {
+	static void validateAge(int age) throws Exception {
+		try {
+			int[] arr = new int[3];
+			System.out.println(arr[5]); // ArrayIndexOutOfBoundsException
+		} catch (ArithmeticException e) {
+			System.out.println("Arithmetic Exception caught.");
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("Array Index Out Of Bounds Exception caught.");
+		} catch (Exception e) {
+			System.out.println("Some other exception caught.");
+		}
+
+		if (age < 18) {
+			throw new Exception("Age must be 18 or above to vote.");
+		}
+		System.out.println("Valid age!");
+	}
+	public static void main(String[] args) {
+		try {
+			validateAge(17);
+		} catch (Exception e) {
+			System.out.println("Exception caught: " + e);
 		}
 	}
 
+
 }
+
+
+
+
+

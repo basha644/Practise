@@ -16,25 +16,26 @@ class ConstructorDemo1 extends ConstructorDemo{
 	 */
 	int a;
 	int b;
-	
+	// Non- static block
 	{
 		System.out.println("Block code, It is calling defaultly after super() calling berfore statements within constructor");
 	}
 	
 	static {
-		System.out.println("Static Block code, It is calling defaultly first call in stack after that other statements");
+		System.out.println("Static Block code, It is calling defaultly first call in stack after that other statements will be execute");
 	}
  
 	ConstructorDemo1() {
 		// If even we are not calling super() method default it calls super() method
 		// Other scenario like when we are calling this only this calling
 		// So, In every constructor default first statement would be super()/this().
-		System.out.println("Child class Non-parameterized construcor");
+
+		System.out.println("Child class Non-parameterized constructor");
 	}
 	
 	/*
-	 * Constructor can be reffered as special type of setter whose name is same as
-	 * that of a class name and it is invocked during Object creation. Also it
+	 * Constructor can be referred as special type of setter whose name is same as
+	 * that of a class name, and it is invoked during Object creation. Also, it
 	 * doesn't have any explicit return type.
 	 */	public ConstructorDemo1(int a, int b) {
 		this();
@@ -42,10 +43,11 @@ class ConstructorDemo1 extends ConstructorDemo{
 		// Right side a: Refers the local variable
 		this.a = a;
 		this.b = b;
-		System.out.println("Child class Parameterized construcor");
+		System.out.println("Child class Parameterized constructor");
 
 	}
 
+	//toString Override other wise it is default prints object address
 	@Override
 	public String toString() {
 		return "ConstructorDemo1 [a=" + a + ", b=" + b + "]";
@@ -58,7 +60,7 @@ public class ConstructorDemo {
 	
 	ConstructorDemo(){
 		this (1,2);
-		System.out.println("Parent class Non-parameterized construcor");
+		System.out.println("Parent class Non-parameterized constructor");
 	}
  
 	// Constructor overloading
@@ -70,7 +72,7 @@ public class ConstructorDemo {
 	}
 	
 	void some() {
-		System.out.println("method calling");
+		System.out.println("method calling inside Parameterized construcor");
 	}
 	
 
@@ -87,7 +89,16 @@ public class ConstructorDemo {
 		 */
 		ConstructorDemo1 child = new ConstructorDemo1(2, 3);
 		System.out.println(child);
-		
+		System.out.println();
+
+		ConstructorDemo1 child1 = new ConstructorDemo1();
+
+		System.out.println();
+		System.out.println("child 1 object a value: "+child1.a);
+		System.out.println(" like child1 for object separate set of default/ intialized values will allocate");
+		System.out.println("child 1 object b value: "+child1.b);
+
+
 //		ConstructorDemo parentobject = new ConstructorDemo();
 
 	}

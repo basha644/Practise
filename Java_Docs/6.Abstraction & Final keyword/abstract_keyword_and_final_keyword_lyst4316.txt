@@ -16,7 +16,7 @@
 
 -->An abstract class cannot be instantiated(We cannot create an Object of abstract class)
 
--->If a class is extendings (Inheriting from) abstract class then we must implement all abstract m,ethods in our class or declare the class as abstract.
+-->If a class is extends (Inheriting from) abstract class then we must implement all abstract methods in our class or declare the class as abstract.
 
 -->We can declare the class as abstract, we can declare the method as abstract however we cannot have variable as abstract.
 

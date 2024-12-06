@@ -15,14 +15,14 @@ public class ArrayDemo {
 		 *In Java, array is treated as an Object.Hence memory is allocated on Heap area
 		 * Size is fixed, It cannot grow or shrink in size.
 		 * If we try to change the size of an array after array declaration then new array Object will be created and old array object will neither grow or shrink.
-		 * It demands Contigious memory locations.(i.e it allocates null values for remaining indexes even we are not mentioned values for indexes)
-		 * We donot have any direct class to work with data or array elements. Thuogh we have an utility class available (Arrays)
+		 * It demands Contiguous memory locations.(i.e it allocates null values for remaining indexes even we are not mentioned values for indexes)
+		 * We don't have any direct class to work with data or array elements. Though we have an utility class available (Arrays)
 		 * We don't have any inbuilt methods like collection methods.
 		 */		
 		int i[]= {1,2,3,4}; 
 		Integer ig[]= {1,2,3,4}; // Wrapper class
 		char ch[]= new char[4];
-		Object o[]= {"c,1,basha,12.3,3.45f"}; // It can store only homogenius(Same) type of data.Except object bcz object we store any type of data.
+		Object o[]= {"c,1,basha,12.3,3.45f"}; // It can store only homogeneous(Same) type of data.Except object bcz object we store any type of data.
 		System.out.println(i.length);// Here length is not a method.
 		//System.out.println(i[6]); // java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 4
 		

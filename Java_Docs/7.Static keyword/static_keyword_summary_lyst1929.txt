@@ -29,4 +29,11 @@ Before Object creation
 1. Static variable (Class loader subsystem --> Linking --> Preparation)
 2. Static Block (Class loading --> Initialization)
 While Object creation
-3. Global va
+3. Global variable will intialize
+4.at the time of construction  loading first non-static block will be call
+
+
+
+
+
+

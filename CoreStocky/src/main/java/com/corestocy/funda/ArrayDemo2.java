@@ -18,6 +18,7 @@ public class ArrayDemo2 {
 		int ar[] = new int[5]; // Recommended structure
 		int[] t = new int[5]; // we can write but not Recommended
 		int n[] = { 0, 1, 2, 3, 4 }; // At a time Array declaration with values
+//		animalArray[0] = new Dog(); // Array creation using with class reference
 //		System.out.println(n.length);
 		
 		Scanner sc =new Scanner(System.in);

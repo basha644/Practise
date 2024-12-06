@@ -9,7 +9,11 @@ class Demo3 {
 	/* If we need execute any statement at thae time of onbject creation. Then
 	 * we must include that within Constructor bcz Constructor is invoked when we create an Object. */
 	Demo3(){
+		// Non-static Block will call next to brlow statement
 		System.out.println("parent class constructor ");
+	}
+	{
+		System.out.println("Non-static parent block");
 	}
 	
 }
@@ -27,7 +31,7 @@ class Demo2 extends Demo3{
 	{
 		x = 10;
 		y = 20;
-		System.out.println("Non Static block/Java Block");
+		System.out.println("Non Static child block/Java Block");
 	}
 
 	public Demo2() {

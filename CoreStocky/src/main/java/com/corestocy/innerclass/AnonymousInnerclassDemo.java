@@ -43,7 +43,8 @@ public class AnonymousInnerclassDemo {
 
 		};
 		a.bark();
-// By using Innerclass We can access only one method(Overriden method). if even we are written more methods(It treats like special method) not showing any error.		
+// By using Innerclass We can access only one method(Overriden method). if even we are written more methods(It treats like special method)
+// not showing any error.
 //		a.barking(); 
 
 		// Interface Object creation with help of Anonymous Inner class

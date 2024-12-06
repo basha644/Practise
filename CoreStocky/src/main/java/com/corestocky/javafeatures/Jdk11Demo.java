@@ -12,8 +12,8 @@ public class Jdk11Demo {
 		
 		int i =0;
 		String s[]= new String[5];
-		var value= new String[10];
-		var a=10;
+		String [] value= new String[10];
+		int a=10;
 		a=5;
 //		a="string";// we can't change data type homogenous data only
 		

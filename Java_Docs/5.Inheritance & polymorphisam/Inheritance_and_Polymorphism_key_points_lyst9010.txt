@@ -38,14 +38,18 @@ Rules to override a method--->>>
 -> We can change the return type of a overriden method in a child class if there is Is-A relationship between return types ( co-variant return type)
 -> We cannot change the argument list or parameters of a overriden method in a child class.It will be considered as overloaded method.
 
+Key Benefits of Co-variant Return Types:
+Type Safety: It eliminates the need for explicit typecasting when working with subclass-specific methods or fields.
+Specialization: Allows subclass methods to provide more specific implementations, which is closer to real-world scenarios.
+Flexibility: Improves readability and maintainability by enabling polymorphism with more specific return types
 
 --> Whenever we create Object of a class , refrence variable must be of same type as that of the object.
 
-     Dog d=new Dog();
+     Chid d=new Chid();
 
 Whenever in one case refrence variable can be of diff type i.e if the refrence varibale is of Parent type then it's allowed 
 
-Animal a=new Dog();
+Parent a=new Chid();
 
 --> Using Parent type reference, we can access inherited methods and overriden methods of a child class 
     however we cannot access specialized method of child class using parent reference directly.
@@ -71,8 +75,17 @@ Method overloading == Compiletime Polymorphism
 
 
 
+Modifier	Class	Package Subclass	Global
+public	✔	✔	✔	✔               ✔
+protected	✔	✔	✔	         ✘
+(default)	✔	✔	✘	         ✘
+private	✔	✘	✘	         ✘
 
-
+Use Cases and Guidelines:
+public: Use for APIs or methods that need to be accessed universally.
+private: Use for sensitive data or implementation details that should not be exposed.
+protected: Use when you want to provide access to subclasses but restrict it to other unrelated classes.
+(default): Use when you want to encapsulate functionality within the same package.
 
 
 
