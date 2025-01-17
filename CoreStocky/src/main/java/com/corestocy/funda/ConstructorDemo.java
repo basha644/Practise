@@ -16,18 +16,18 @@ class ConstructorDemo1 extends ConstructorDemo{
 	 */
 	int a;
 	int b;
-	// Non- static block
+	// Non-static block
 	{
-		System.out.println("Block code, It is calling defaultly after super() calling berfore statements within constructor");
+		System.out.println("Block code, It is calling default after super() calling before statements within constructor");
 	}
 	
 	static {
-		System.out.println("Static Block code, It is calling defaultly first call in stack after that other statements will be execute");
+		System.out.println("Static Block code, It is calling default first call in stack after that other statements will be execute");
 	}
  
 	ConstructorDemo1() {
 		// If even we are not calling super() method default it calls super() method
-		// Other scenario like when we are calling this only this calling
+		// Other scenario like when we are calling this() only this calling
 		// So, In every constructor default first statement would be super()/this().
 
 		System.out.println("Child class Non-parameterized constructor");
@@ -68,11 +68,11 @@ public class ConstructorDemo {
 		this.some();
 		this.c = c;
 		this.d = d;
-		System.out.println("Parent class Parameterized construcor");
+		System.out.println("Parent class Parameterized constructor");
 	}
 	
 	void some() {
-		System.out.println("method calling inside Parameterized construcor");
+		System.out.println("method calling inside Parameterized constructor");
 	}
 	
 
@@ -95,11 +95,11 @@ public class ConstructorDemo {
 
 		System.out.println();
 		System.out.println("child 1 object a value: "+child1.a);
-		System.out.println(" like child1 for object separate set of default/ intialized values will allocate");
+		System.out.println(" like child1 for object separate set of default/ initialized values will allocate");
 		System.out.println("child 1 object b value: "+child1.b);
 
 
-//		ConstructorDemo parentobject = new ConstructorDemo();
+//		ConstructorDemo parent object = new ConstructorDemo();
 
 	}
 

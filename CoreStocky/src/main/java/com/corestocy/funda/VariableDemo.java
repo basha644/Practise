@@ -13,8 +13,8 @@ public class VariableDemo {
 	public void play() {
 		String gameName = "JVM not give any default value for Local variables";
 		String game; // Local variable
-		// without assigning any value we can't access local variable
-		// The life time of local varaiable is within the scope/method only.
+		// without assigning any value we can't access local variable,
+		// The lifetime of local variable is within the scope/method only.
 //		System.out.println(game);  //Compile time error
 		System.out.println("Local variable: " + gameName);
 	}
@@ -30,7 +30,7 @@ public class VariableDemo {
 		 */
 		new VariableDemo();
 		/*
-		 * Object Instaniating class means creation of object 
+		 * Object Instantiating class means creation of object
 		 * VariableDemo: Class name/Type of data 
 		 * vd: objectReference name/ Local reference variable. 
 		 * new: Memory allocation in heap area/ to initialize the memory 
@@ -40,7 +40,7 @@ public class VariableDemo {
 		/*
 		 * Next play method is called and executed in stack area Local variable is
 		 * initialized only when method is called and here JVM will not give any default values. 
-		 * After executing it will goes to GC(garbage collector).
+		 * After executing it will go to GC(garbage collector).
 		 */
 		vd.play();
 		System.out.println("Global variable default int value: " + vd.num);

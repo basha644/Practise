@@ -15,9 +15,9 @@ public class ArrayDemo2 {
 		// DataType []arrayName=new Datatype[size];
 		// Note: ar.length is not a method.
 		
-		int ar[] = new int[5]; // Recommended structure
+		int[] ar = new int[5]; // Recommended structure
 		int[] t = new int[5]; // we can write but not Recommended
-		int n[] = { 0, 1, 2, 3, 4 }; // At a time Array declaration with values
+		int[] n = { 0, 1, 2, 3, 4 }; // At a time Array declaration with values
 //		animalArray[0] = new Dog(); // Array creation using with class reference
 //		System.out.println(n.length);
 		

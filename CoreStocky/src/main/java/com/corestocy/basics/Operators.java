@@ -11,7 +11,7 @@ public class Operators {
         int c = 15;
         int f = 10;
 
-        // Tenerary operator
+        // Ternary operator
         // condition true then take value of before semicolon otherwise after semicolon
         int d = (a > b) ? c : a;
         System.out.println("d:" + d);

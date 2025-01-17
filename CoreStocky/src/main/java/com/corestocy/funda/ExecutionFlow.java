@@ -9,12 +9,12 @@ class Parent {
 
     // Static block in Parent
     static {
-        System.out.println("Parent Static Block");
+        System.out.println("Parent Static Block 3");
     }
 
     // Non-static block in Parent
     {
-        System.out.println("Parent Non-Static Block");
+        System.out.println("Parent Non-Static Block 7");
     }
 
     // Parent constructor
@@ -23,18 +23,18 @@ class Parent {
     }
 
     Parent(int x) {
-        System.out.println("Parent Parameterized Constructor with value: " + x);
+        System.out.println("Parent Parameterized Constructor with value 8: " + x);
     }
-
+    static int count = 0; // in static method static variables only allowed
     // Static method to initialize static variable
     static int initializeParentStaticVar() {
-        System.out.println("Parent Static Variable Initialization");
+        System.out.println("Parent Static Variable Initialization 2 ");
         return 100;
     }
 
     // Method to initialize instance variable
     int initializeParentInstanceVar() {
-        System.out.println("Parent Instance Variable Initialization");
+        System.out.println("Parent Instance Variable Initialization 6");
         return 200;
     }
 }
@@ -48,7 +48,7 @@ class Child extends Parent {
 
     // Static block in Child
     static {
-        System.out.println("Child Static Block");
+        System.out.println("Child Static Block 5");
     }
 
     // Non-static block in Child
@@ -65,25 +65,25 @@ class Child extends Parent {
     // Child parameterized constructor
     Child(int x) {
         super(20); // Calls the parameterized constructor in Parent
-        System.out.println("Child Parameterized Constructor with value: " + x);
+        System.out.println("Child Parameterized Constructor with value : " + x);
     }
 
     // Static method to initialize static variable
     static int initializeChildStaticVar() {
-        System.out.println("Child Static Variable Initialization");
+        System.out.println("Child Static Variable Initialization 4");
         return 300;
     }
 
     // Method to initialize instance variable
     int initializeChildInstanceVar() {
-        System.out.println("Child Instance Variable Initialization");
+        System.out.println("Child Instance Variable Initialization 9");
         return 400;
     }
 }
 
 public class ExecutionFlow {
     public static void main(String[] args) {
-        System.out.println("Main Method Start");
+        System.out.println("Main Method Start 1");
         Child obj1 = new Child(); // Creating the first object
         System.out.println("----");
         Child obj2 = new Child(); // Creating the second object

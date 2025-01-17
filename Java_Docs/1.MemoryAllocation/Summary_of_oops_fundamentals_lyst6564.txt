@@ -13,7 +13,7 @@ Customer cs = new Customer();
 Here,
 1.Reference class : like what type of data/datatype we are taking/allowing. Only this class & parent one methods are allowable.
 2.Object reference : By using this refference we can call global variable,method
-3.storage allocation: whenever we call new keyword at that time new storage is allocated for that object
+3.storage allocation: whenever we call new keyword at that time new storage is allocated in heap area for that object
 4.constructor of that class like default/parameterized for setting the values  to variables
 whenever object creation at that time compiler checks is constructor is available or not,
 If not Compiler provides deafault constructor otherwise it uses available constructor  
