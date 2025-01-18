@@ -2,7 +2,7 @@ package com.corestocy.basics;
 
 public class Loops {
 
-    // loops: same method/Functionality is need to run multiple times then we will go to
+// loops: same method/Functionality is need to run multiple times then we will go to
 // For loop: If number of iterations(size) is fixed
 // For each loop: If we need to iterate fixed no.of objects/Arrays
 // While loop: If number of iterations not fixed (iterate a part of the program repeatedly until the specified Boolean condition is true)
