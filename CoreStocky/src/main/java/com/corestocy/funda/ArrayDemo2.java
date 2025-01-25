@@ -6,12 +6,12 @@ public class ArrayDemo2 {
 
 	int a;
 	int b;
-	int c, d, e, f, g; // instead of this one we can use Array
+	int c, d, e, f, g; // instead of this one, we can use Array
 
 	public static void main(String[] args) {
         
 		// Array is an indexed based Data structure to store large volume of homogeneous(Similar) type of data.
-		// while creating at that time we need to give size, otherwise syntax error.
+		// while creating at that time, we need to give size, otherwise syntax error.
 		// DataType []arrayName=new Datatype[size];
 		// Note: ar.length is not a method.
 		

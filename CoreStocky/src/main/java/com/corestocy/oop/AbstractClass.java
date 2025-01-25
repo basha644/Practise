@@ -1,7 +1,7 @@
 package com.corestocy.oop;
 
 abstract class Shape {
-    abstract void draw(); // Abstract method (no body)
+    abstract void draw(); // Abstract method (nobody)
 
     public void info() { // Concrete method
         System.out.println("This is a shape.");

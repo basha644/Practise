@@ -29,9 +29,9 @@ public class AnonymousInnerclassDemo {
 //		Animal a = new Dog();
 //		a.bark(); // Old methodology
 
-		// AnonymousInnerclass
+		// AnonymousInner class
 		// A class without name
-		Animal a = new Animal() { // In systemexplorer it saves as (AnonymousInnerclassDemo$1.class) and consumes
+		Animal a = new Animal() { // In system explorer it saves as (AnonymousInnerclassDemo$1.class) and consumes
 									// memory also
 			void bark() {
 				System.out.println("fastly");
@@ -43,7 +43,7 @@ public class AnonymousInnerclassDemo {
 
 		};
 		a.bark();
-// By using Innerclass We can access only one method(Overriden method). if even we are written more methods(It treats like special method)
+// By using Inner class, We can access only one method(Overriden method). if even we are written more methods (It treats like special method)
 // not showing any error.
 //		a.barking(); 
 

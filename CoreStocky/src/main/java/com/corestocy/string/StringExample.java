@@ -1,4 +1,4 @@
-package com.corestocy.funda.string;
+package com.corestocy.string;
 /*String in Java
 A String in Java is an immutable sequence of characters, meaning once created, it cannot be changed.
 

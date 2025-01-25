@@ -2,7 +2,7 @@ package com.corestocy.oop;
 
 /*Static methods belong to the abstract class and cannot be overridden.
 Default methods in abstract classes are the same as concrete methods.
--->An abstract class can have a Constructor. This Constructor would be invovked using super() call present in the child class Constructor.
+-->An abstract class can have a Constructor. This Constructor would be invoked using super() call present in the child class Constructor.
 -->Constructor cannot be abstract bcz in every constructor we have either super() or this().*/
 abstract class Vehicle1 {
     // Abstract method

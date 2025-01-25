@@ -3,7 +3,7 @@ package com.corestocy.basics;
 public class DataTypes {
     byte first_Datatype = 127; // -128 to 127 1 byte
     short second$Datatype = 128; // 2 bytes
-    int number_First = 10; // 4 bytes 2,147,483,647 not suitable for phonenumber
+    int number_First = 10; // 4 bytes 2,147,483,647 not suitable for phone number
     long long123 = 2346778; // 8bytes
     float value = 0.02345f; // 6 to 7 decimal digits
     double fractionValue = 0.12345678901234566777;// 15 decimal digits
@@ -14,8 +14,8 @@ public class DataTypes {
     Character sign='Y';
 
     // Primitive classes are faster when compared to wrapper classes. However, the
-    // wrapper class allows null values but the primitive class does not allow any null values.
-    // Wrapper classes help the Java program be completely object-oriented whereas
+    // wrapper class allows null values, but the primitive class does not allow any null values.
+    // Wrapper classes help the Java program be completely object-oriented, whereas
     // primitive data types help in the simple declaration of values with variables.
 
     // TypeCasting

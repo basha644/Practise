@@ -16,12 +16,10 @@ public class UnaryOperator1 {
         System.out.println("(a<c): "+(a<c));
         System.out.println("!(a<c): "+!(a<c));
 
-        // ~ (negating an expression)
-
+        // ~ (negating an expression with increment one digit value)
         System.out.println("d: "+~d);
         System.out.println("d: "+d);
-
-
-
+        System.out.println("d: "+~d);
+        System.out.println("d: "+d);
     }
 }

@@ -42,7 +42,7 @@ Local Variables --
 (In other words object memory is de allocated)
 
 --> Whenever program is executed at that time main method creates a main thread in stack area, It is responsible to run entire statements one by one.
---> When ever we call a method or a block to execute then one stack will be created within stack area
+--> Whenever we call a method or a block to execute then one stack will be created within stack area
 ---> when ever that method body or block body execution is over that stack will be deallocated from stack area
  
 We can write methods in Java in four different ways based on needs refer class board notes for same;

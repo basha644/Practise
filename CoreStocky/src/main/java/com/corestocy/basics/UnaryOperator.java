@@ -44,8 +44,5 @@ public class UnaryOperator {
         System.out.println("i: " + i);
         System.out.println("k: " + k);
         System.out.println("l: " + l);
-
-
     }
-
 }

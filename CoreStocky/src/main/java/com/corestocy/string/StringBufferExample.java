@@ -1,4 +1,4 @@
-package com.corestocy.funda.string;
+package com.corestocy.string;
 
 /*A StringBuffer is a mutable sequence of characters, which means it can be modified without creating new objects.
 

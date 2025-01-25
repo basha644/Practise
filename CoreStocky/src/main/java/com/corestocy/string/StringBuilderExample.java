@@ -1,4 +1,4 @@
-package com.corestocy.funda.string;
+package com.corestocy.string;
 
 /*A StringBuilder is similar to StringBuffer but is not thread-safe. It is faster in single-threaded environments.
 
