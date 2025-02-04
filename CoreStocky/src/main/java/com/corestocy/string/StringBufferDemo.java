@@ -1,12 +1,12 @@
-package com.corestocy.funda.string;
+package com.corestocy.string;
 
 public class StringBufferDemo {
 	public static void main(String[] args) {
 		
-		//Mutable object. we can change in multiple time
+		//Mutable object. We can change in multiple time
 		//Tostring method overrided
-		//Generally equals method compares references of the object. But in string equals method overrided. So, That why it compares the content
-		//In StringBuffer & StringBuilder equals method not overrided. So, That why it compares the references
+		//Generally equals method compares references of the object. But in string equals method overrided. So, That's why it compares the content
+		//In StringBuffer & StringBuilder equals method not overrided. So, That's why it compares the references
 		
 		StringBuffer sf =new StringBuffer();
 		System.out.println("Default capacity: "+sf.capacity()); //Default capacity

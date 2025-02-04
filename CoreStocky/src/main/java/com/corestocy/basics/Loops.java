@@ -2,13 +2,13 @@ package com.corestocy.basics;
 
 public class Loops {
 
-    // loops: same method/Functionality is need to run multiple times then we will go to
+// loops: same method/Functionality is need to run multiple times then we will go to
 // For loop: If number of iterations(size) is fixed
 // For each loop: If we need to iterate fixed no.of objects/Arrays
 // While loop: If number of iterations not fixed (iterate a part of the program repeatedly until the specified Boolean condition is true)
 //break: when if condition is satisfies then loop will be break and further not iterated.
-// While using nested loops it breaks the only inner loop not outer loop.
-//continue: when if condition is satisfies then simply it not return/skip that statement/iteration and continues remaining iterations.
+// While using nested loops, it breaks the only inner loop, not outer loop.
+//continue: when if condition is satisfied, then simply it not returns / skips that statement/iteration and continue remaining iterations.
     public static void main(String[] args) {
         int i = 10;
         if (i > 15) {

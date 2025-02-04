@@ -5,7 +5,7 @@ Binding of variables with methods */
 
 class FseData {
 	/*
-	 * Generally private data we can't access outside of the class. But, Here we can
+	 * Generally private data we can't access outside the class. But Here we can
 	 * access with the help of setters & getters methods.
 	 */
 	private String fseName;
@@ -17,10 +17,8 @@ class FseData {
 
 	public void setFseName(String fseName) {
 		/*
-		 * Here, we are assigning local variable value to global variable with he help
-		 * of this keyword
-		 * This keyword: It refers the current class variables,methods
-		 * and constructors.
+		 * Here, we are assigning local variable value to global variable with the help of this keyword
+		 * This keyword: It refers the current class variables, methods, and constructors.
 		 */
 		this.fseName = fseName;
 	}

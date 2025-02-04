@@ -1,4 +1,4 @@
-package com.corestocy.funda.string;
+package com.corestocy.string;
 
 public class StringDemo {
 	/*

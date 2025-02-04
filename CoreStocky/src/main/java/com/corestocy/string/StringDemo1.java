@@ -1,4 +1,4 @@
-package com.corestocy.funda.string;
+package com.corestocy.string;
 
 public class StringDemo1 {
 	//Concatination
@@ -11,15 +11,15 @@ public class StringDemo1 {
 		String s="airtel";
 		System.out.println(s); //airtel
 		s.concat("revenue"); // new revenue object is created in SCP but not refered and airtelrevenue also created in heap area. It also not referred.
-		System.out.println(s); // Here, 's' referred to airtel object.
+		System.out.println(s); // Here, 's' referred to an airtel object.
 		
-		// In java string manipulation and inbuilt string methods will run in runtime only and concatenated object is store in always heap area.
+		// In java string manipulation and inbuilt string methods will run in runtime only and a concatenated object is store in always heap area.
 		String s1=s.concat("revenue"); // now, airtelrevenue objet is created in heap area and now referes to s1.
 		System.out.println(s1); //airtelrevenue
 		
 		String s2= "akbar";
 		System.out.println(s2); // akbar object stored in SCP and refers to s2
-		s2=s2.concat("basha"); // Note: concat object is stored in heap area and s2 refers to this object
+		s2=s2.concat("basha"); // Note: a concat object is stored in the heap area and s2 refers to this object
 		System.out.println(s2); // Note: Here, s2 referred to heap object(akbarbasha) not SCP object(basha).
 		// some persons are tell this one is mutable but real thing is s2 reference is changed.
 		
