@@ -22,6 +22,10 @@ public class InterfaceDemo {
         Animal1 myCat = new Cat();
         myCat.eat();
         myCat.sleep();
+        System.out.println();
+        Cat mat = new Cat();
+        mat.eat();
+        mat.sleep();
     }
 }
 

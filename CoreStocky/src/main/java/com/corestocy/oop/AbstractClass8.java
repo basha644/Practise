@@ -10,6 +10,8 @@ abstract class Vehicle1 {
     Vehicle1(){
         System.out.println("parent constructor");
     }
+    int a=10;
+    static int c=10;
 
     // Default method (concrete method with implementation)
     public void fuelType() {
