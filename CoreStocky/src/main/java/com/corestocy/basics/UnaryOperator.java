@@ -19,7 +19,7 @@ public class UnaryOperator {
         int d = a--; // d=6 after a=5
 
         // --a(pre decrement )
-        // First decrement the a value after that assign value to e
+        // First decrement a value after that assign value to e
         // present a=5
         int e = --a; // a=4,e=4
 
