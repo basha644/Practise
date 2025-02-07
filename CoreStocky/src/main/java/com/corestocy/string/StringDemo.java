@@ -4,8 +4,8 @@ public class StringDemo {
 	/*
 	 Immutable String(we can't change) : String
 	 Mutable String(we can change) : StringBuffer and StringReader
-	 Generally equals method compares references of the object. But in string equals method override. So, That why it compares the content
-	 In StringBuffer & StringBuilder equals method not overrided. So, That why it compares the references
+	 Generally equals method compares references of the object. But in string equals method override. So, That's why it compares the content
+	 In StringBuffer & StringBuilder equals method not overrided. So, That's why it compares the references
 	*/
 
     public static void main(String[] args) {
@@ -14,14 +14,28 @@ public class StringDemo {
 		// Generally string creates in below two ways
 		String s="akbar"; // literal (Object created only in SCP, SCP Object is referred/pointed to reference variable)
 		String si = new String("akbar"); //new keyword (object created in both Heap & SCP Bcz of new keyword and Here, Heap Object is referred to reference variable)
-		
+		String s3 = null;
+		String s4 = "";
+
+		System.out.println(s4.equals(null)); //NullpointerException bcz s3 is null
+		System.out.println("s3 value:" +s3 );
+		System.out.println("s4 value:" +s4 );
+		System.out.println("comparision: "+ s3 == null);
+//		System.out.println("comparision: "+ s3.isBlank()); //NullpointerException bcz s3 is null
+//		System.out.println("comparision: "+ s3.isEmpty());//NullpointerException bcz s3 is null
+		System.out.println();
+		System.out.println("comparision: "+ s4 == null);
+		System.out.println("comparision: "+ s4.isBlank());
+		System.out.println("comparision: "+ s4.isEmpty());
+
+
 		/*
-		 * When we are creating string with new keyword at that time string data stored in heap also,Bcz of new keyword. 
+		 * When we are creating string with new keyword at that time, string data stored in heap also,Bcz of new keyword.
 		 * 'new'-means separate/new storage area
-		 * SCP- No Duplicates. If any same string coming, at that time instead of new creation it referred the existing object.
-		 * Heap-Duplicates will create.(each time new object is created. Even same objet is available)
+		 * SCP- No Duplicates. If any same string comes, at that time instead of new creation it referred to the existing object.
+		 * Heap-Duplicates will create.(each time a new object is created. Even same objet is available)
 		 */		
-		//Generally string compare in below two ways
+		//Generally string compares in below two ways
 		System.out.println(s.equals(si)); //true - Compares content bcz,equal method overrided
 		System.out.println(s==si); //false - Compares address(storage location)
 		

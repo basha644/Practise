@@ -2,8 +2,8 @@ package com.corestocy.oop;
 
 /*Default methods provide a default implementation that can be overridden by implementing classes.
 Static methods are called using the interface name and cannot be overridden.
-Feature	Abstract Class	Interface
 
+Feature          	Abstract Class	                         Interface
 Fields/Variables	Can have instance and static variables.	 Can have only public static final constants.
 Variables	        Can be private, protected, or public.	 Variables are public static final by default.
 Constructors	    Can have constructors.	                 Cannot have constructors.

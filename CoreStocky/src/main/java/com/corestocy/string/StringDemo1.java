@@ -10,10 +10,12 @@ public class StringDemo1 {
 		
 		String s="airtel";
 		System.out.println(s); //airtel
-		s.concat("revenue"); // new revenue object is created in SCP but not refered and airtelrevenue also created in heap area. It also not referred.
+		s.concat("revenue"); // new revenue object is created in SCP but not refered and
+		                         // airtelrevenue also created in heap area. It also not referred.
 		System.out.println(s); // Here, 's' referred to an airtel object.
 		
-		// In java string manipulation and inbuilt string methods will run in runtime only and a concatenated object is store in always heap area.
+		// In java string manipulation and inbuilt string methods will run in runtime only and
+		// a concatenated object is store in always heap area.
 		String s1=s.concat("revenue"); // now, airtelrevenue objet is created in heap area and now referes to s1.
 		System.out.println(s1); //airtelrevenue
 		
@@ -48,14 +50,6 @@ public class StringDemo1 {
 //		name= name+"akbar"; Here, Final is restricted to reference name not string object.
 		String name1= name+": akbar";
 		System.out.println(name1);
-		
-		
-		
-		
-		
 
-		
-		
-		
 	}
 }
