@@ -1,0 +1,6 @@
+Thread: Independent line of execution
+creation 
+-extends Thread
+- implement Runnable
+
+concurrent 

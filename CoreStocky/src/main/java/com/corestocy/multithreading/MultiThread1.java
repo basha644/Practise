@@ -1,7 +1,7 @@
 package com.corestocy.multithreading;
 /*
-Thread Scheduler will decided like which one need to run first,
-we can exact result it will depend on ThreadScheduler
+Thread Scheduler will decide like which one need to run first;
+we can't predict an exact result it will depend on ThreadScheduler
 */
 
 class Song1 extends Thread{

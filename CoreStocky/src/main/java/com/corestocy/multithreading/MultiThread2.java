@@ -82,12 +82,8 @@ public class MultiThread2
         System.out.println("Main Thread started ");
 
         System.out.println("Resources opening");
-        Banking b=new Banking();
-
-
+        Banking1 b=new Banking1();
         PrintingNum1 pn=new PrintingNum1();
-
-
         PrintingAlpha1 pa=new PrintingAlpha1();
 
         System.out.println(pn.isAlive());//false
@@ -95,6 +91,7 @@ public class MultiThread2
 
         pn.start();
         pa.start();
+
 
         System.out.println(pn.isAlive());//true
         System.out.println(pa.isAlive());//true
@@ -104,17 +101,13 @@ public class MultiThread2
 
 
         System.out.println("Resources closed"); // Before completing remaining threads, the main thread will be closed.
-        // The Next Thread scheduler will take care remaining threads. If want to see comment above join methods and run
+        // The Next Thread scheduler will take care remaining threads. If you want to see comment above join methods and run
 
         System.out.println("Main thread completed work");
-
-
 
 //		b.run();
 //		pn.run();
 //		pa.run(); // program will behave like single threaded programming
-
-
 
     }
 
