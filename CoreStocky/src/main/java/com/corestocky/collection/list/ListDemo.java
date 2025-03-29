@@ -11,12 +11,12 @@ public class ListDemo {
 	 * Insertion order preserved (we can get values as in the order of inserting)
 	 * Heterogeneous objects allowed
 	 * Duplicate objects allowed
-	 * We can differentiate duplicate objects, and we can maintain insertion order by means of index hence "index play very important role in List".
+	 * We can differentiate duplicate objects, and we can maintain insertion order by index, hence "index play very important role in List".
 	 */
 	public static void main(String[] args) {
 		
 		// List(I) methods
-		// See how in every method index plays major role
+		// See how in every method index plays a major role
 		List l =new ArrayList ();
 		List<String> c = new LinkedList<String>();
 		c.add("akbar");
@@ -48,7 +48,7 @@ Frequent insertions/deletions at ends	      Suitable if at the end only	       P
 Frequent insertions/deletions in the middle	  Not efficient (requires shifting)    Efficient (pointer adjustments)
 Low memory overhead required	              Better choice	                       Avoid if memory is a concern
 
-Conclusion
+Conclusion,
 Use ArrayList when frequent access to elements is required or when memory efficiency is critical.
 Use LinkedList when frequent insertions or deletions at arbitrary positions are required.
 */
