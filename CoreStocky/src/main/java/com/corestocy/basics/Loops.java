@@ -65,7 +65,7 @@ public class Loops {
         for (int l = 0; l < 7; l++) {
             if (l == 5) {
                 System.out.println("continue system l=5: " + l);
-                continue; // After if condition is satisfying then simply it not return/skip that statement/iteration and continues remaining iterations.
+                continue; // After if condition is satisfying, then simply it not return/skip that statement/iteration and continues remaining iterations.
 
             }
             System.out.println(l);
