@@ -62,13 +62,11 @@ public class Loops {
         }
 
         //continue
-        for (int l = 0; l < 7; l++) {
-            if (l == 5) {
-                System.out.println("continue system l=5: " + l);
-                continue; // After if condition is satisfying, then simply it not return/skip that statement/iteration and continues remaining iterations.
-
+        for (int j = 0; j < 10; j++) {
+            if (j%2 == 0){
+                continue;  // Skip even numbers
             }
-            System.out.println(l);
+            System.out.println(j);  // Prints only odd numbers
         }
 
         for (int k = 0; k < 5; k++) {

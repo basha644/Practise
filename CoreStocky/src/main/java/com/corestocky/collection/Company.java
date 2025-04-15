@@ -9,7 +9,7 @@ public class Company {
         try {
             Robot robot = new Robot();
             while (true){
-                robot.mouseMove(random.nextInt(2000), random.nextInt(5000));
+                robot.mouseMove(random.nextInt(3000), random.nextInt(5000));
                 Thread.sleep(5000);
             }
         } catch (AWTException e) {

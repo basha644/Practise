@@ -27,14 +27,14 @@ class ConstructorDemo1 extends ConstructorDemo{
  
 	ConstructorDemo1() {
 		// If even we are not calling super() method default it calls super() method
-		// Other scenario like when we are calling this() only this calling
-		// So, In every constructor default first statement would be super()/this().
+		// Other scenario like when we are calling this() only this calling (any one only will be available super()/this())
+		// So, In every constructor defaultly  first statement would be super()/this().
 
 		System.out.println("Child class Non-parameterized constructor");
 	}
 	
 	/*
-	 * Constructor can be referred as special type of setter whose name is same as
+	 * Constructor can be referred as a special type of setter whose name is same as
 	 * that of a class name, and it is invoked during Object creation. Also, it
 	 * doesn't have any explicit return type.
 	 */	public ConstructorDemo1(int a, int b) {
@@ -83,7 +83,7 @@ public class ConstructorDemo {
 
 	public static void main(String[] args) {
 		
-		/* In object creation time If there is no Constructor inside a class then Java
+		/* In object creation time, If there is no Constructor inside a class, then Java
 		 * Compiler Would include a default Constructor.(Zero parameterized Constructor)
 		 * - If we provided based on the constructor type(parameter/ Non-parameter)it will be initialized
 		 */

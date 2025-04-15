@@ -6,7 +6,7 @@ public class ArrayDemo {
 		//Array
 		//In memory point of view Arrays are not recommended to use
 		//With respect to performance Arrays are recommended to use. Bcz, here we are using Primitive datatypes(lighter) rather than wrapper classes 
-		//Arrays can hold both object(Wrapper classes) and primitive data type .
+		//Arrays can hold both object(Wrapper classes) and primitive data type.
 		
 		
 		
@@ -19,10 +19,10 @@ public class ArrayDemo {
 		 * We don't have any direct class to work with data or array elements. Though we have an utility class available (Arrays)
 		 * We don't have any inbuilt methods like collection methods.
 		 */		
-		int i[]= {1,2,3,4}; 
-		Integer ig[]= {1,2,3,4}; // Wrapper class
-		char ch[]= new char[4];
-		Object o[]= {"c,1,basha,12.3,3.45f"}; // It can store only homogeneous(Same) type of data.Except object bcz object we store any type of data.
+		int[] i = {1,2,3,4}; 
+		Integer[] ig = {1,2,3,4}; // Wrapper class
+		char[] ch = new char[4];
+		Object[] o = {"c,1,basha,12.3,3.45f"}; // It can store only homogeneous(Same) type of data.Except object bcz object we store any type of data.
 		System.out.println(i.length);// Here length is not a method.
 		//System.out.println(i[6]); // java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 4
 		

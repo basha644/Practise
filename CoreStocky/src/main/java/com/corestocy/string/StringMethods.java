@@ -33,6 +33,45 @@ public class StringMethods {
 //		System.out.println("null:"+ui.isEmpty()); //NullPointerException
 		System.out.println("== :"+ui==null);
 
+		String str = "Hello World";
+
+// Length
+		int length = str.length();  // 11
+
+// Character access
+		char firstChar = str.charAt(0);  // 'H'
+
+// Substring
+		String sub1 = str.substring(6);    // "World"
+		String sub2 = str.substring(0, 5); // "Hello"
+
+// Concatenation
+		String newStr = str + "!";  // "Hello World!"
+		String concat = str.concat("!");  // "Hello World!"
+
+// Equality
+		boolean isEqual = str.equals("Hello World");  // true
+		boolean ignoreCase = str.equalsIgnoreCase("hello world");  // true
+
+// Search
+		int index = str.indexOf("World");  // 6
+		boolean contains = str.contains("Hello");  // true
+
+// Replace
+		String replaced = str.replace("World", "Java");  // "Hello Java"
+
+// Case conversion
+		String upper = str.toUpperCase();  // "HELLO WORLD"
+		String lower = str.toLowerCase();  // "hello world"
+
+// Trimming whitespace
+		String withSpaces = "   Hello   ";
+		String trimmed = withSpaces.trim();  // "Hello"
+
+// Split
+		String csv = "apple,banana,orange";
+		String[] fruits = csv.split(",");  // ["apple", "banana", "orange"]
+
 	}
 
 }

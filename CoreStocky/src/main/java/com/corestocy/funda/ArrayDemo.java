@@ -16,6 +16,8 @@ public class ArrayDemo {
 	
 
 	public static void main(String[] args) {
+		Integer[] inte = {1,2,3};
+		System.out.println(inte.length);
 		 Animal[] animalArray = new Animal[2];
 	     animalArray[0] = new Dog(); // Dog is an Animal
 	     animalArray[1] = new Cat(); // Cat is an Animal
