@@ -27,6 +27,7 @@ public class ListDemo {
 		l.addAll(1, c);
 		l.get(2);
 		l.remove(3);
+		System.out.println(l);
 		System.out.println(l.listIterator(2));
 		l.listIterator(2);
 		System.out.println(l);

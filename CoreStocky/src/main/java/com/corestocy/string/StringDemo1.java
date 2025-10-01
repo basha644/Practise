@@ -24,7 +24,10 @@ public class StringDemo1 {
 		s2=s2.concat("basha"); // Note: a concat object is stored in the heap area and s2 refers to this object
 		System.out.println(s2); // Note: Here, s2 referred to heap object(akbarbasha) not SCP object(basha).
 		// some persons are tell this one is mutable but real thing is s2 reference is changed.
-		
+		String name ="akbarbasha";
+		System.out.println("akbarbasha: "+ s2.equals(name));
+		System.out.println("akbarbasha: "+ (s2 == name));
+
 		String v ="vasimbasha";
 		String va="vasim"+"basha";
 		System.out.println(v==va);// true, Here objects are stored in SCP 
@@ -42,13 +45,13 @@ public class StringDemo1 {
 		
 		String simNo=    "1234567890";
 		String simNo1="1234567890";
-		System.out.println(simNo==simNo1);
+		System.out.println("simNo: " + (simNo==simNo1));
 		
 		
 		// FINAL Keyword
-		final String name ="name";
+		final String nam ="name";
 //		name= name+"akbar"; Here, Final is restricted to reference name not string object.
-		String name1= name+": akbar";
+		String name1= nam+": akbar";
 		System.out.println(name1);
 
 	}

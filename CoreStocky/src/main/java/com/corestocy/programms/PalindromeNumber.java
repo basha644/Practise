@@ -3,7 +3,6 @@ package com.corestocy.programms;
 public class PalindromeNumber {
     static int reversNumber(int n)
     {
-         n = 123464321;
 
         int reversed_n = 0;
         while (n > 0) {

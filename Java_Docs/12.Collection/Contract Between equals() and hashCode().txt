@@ -1,0 +1,50 @@
+The Default Behavior of equals() and hashCode() (from the Object class):
+
+By default, the equals() method in the Object class (which is the ultimate superclass of all Java classes) compares object references. This means that two object variables are considered equal (obj1.equals(obj2) returns true) if and only if they refer to the exact same object in memory.
+
+Similarly, the default hashCode() method in Object typically returns a unique integer for each distinct object in memory.
+
+The Problem with the Default Behavior When Comparing Object Content:
+
+In many real-world scenarios, you want to consider two objects as "equal" if their content (their attributes or state) is the same, even if they are different object instances in memory.
+
+Consider our Person class example again:
+
+Java
+
+Person person1 = new Person("Alice", 30);
+Person person2 = new Person("Alice", 30);
+According to the default equals() method, person1.equals(person2) would return false because person1 and person2 are two distinct Person objects in memory, even though they have the same name and age.
+
+Why Overriding equals() is Necessary:
+
+If you want to compare Person objects based on their name and age, you need to override the equals() method in the Person class to implement this "content equality." Your overridden equals() method will then compare the name and age attributes of the two Person objects and return true if they are the same.
+
+The Importance of Overriding hashCode():
+
+The hashCode() method plays a crucial role when your objects are used in hash-based collections like HashSet, HashMap, and HashTable. These collections use the hash code of an object to determine where to store it and how to retrieve it efficiently.
+
+The Contract Between equals() and hashCode():
+
+There's a critical contract in Java that you must adhere to when overriding these methods:
+
+If two objects are equal according to the equals() method, then they must have the same hash code.
+Why is this contract important?
+
+Hash-based collections rely on this contract for their correct functioning:
+
+Adding Elements: When you try to add an object to a HashSet, the set first calculates the object's hash code to determine the bucket where it should be placed. If there's already an element in that bucket, the equals() method is used to check if the new object is already present. If the hash codes were the same but the equals() method returned false (meaning the objects are not actually equal), the HashSet would correctly add the new object.
+
+Retrieving Elements: When you try to retrieve an object from a HashSet or get a value from a HashMap using a key, the hash code of the key is first calculated to quickly locate the potential element(s). Then, the equals() method is used to verify if the retrieved element is indeed the one you're looking for.
+
+Consequences of Violating the equals()/hashCode() Contract:
+
+If you override equals() but not hashCode() (or if your hashCode() implementation is inconsistent with your equals() implementation), you can run into serious issues when using your objects in hash-based collections:
+
+HashSet might contain duplicate elements: Objects that are considered equal by your equals() method might end up in different buckets in the HashSet because they have different hash codes (due to the default hashCode() implementation). The HashSet wouldn't be able to recognize them as duplicates.
+HashMap might not be able to retrieve values correctly: If two keys that are considered equal by your equals() method have different hash codes, the HashMap might store the value associated with one key in a different bucket than where it looks for it when you try to retrieve it using the other key.
+In Summary:
+
+You override equals() to define logical equality for your objects based on their content. The default equals() only checks for reference equality.
+You override hashCode() to ensure that objects considered equal by your overridden equals() method produce the same hash code. This is essential for the correct and efficient operation of hash-based collections in Java.
+By adhering to the equals()/hashCode() contract, you enable your objects to behave predictably and correctly when used in various Java collections and other parts of your code that rely on object comparison.

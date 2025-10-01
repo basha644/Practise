@@ -12,7 +12,8 @@ public class IteratorDemo {
 //	We can use Iterator to get objects one by one from any collection object.
 //	We can apply Iterator concept for any collection object and it is a universal cursor.
 //	While iterating the objects by Iterator we can perform both read and remove operations.
-//	If a user is working with a for loop, they cannot modernize(add/remove) the Collection, whereas, if they use the Java Iterator, they can simply update the Collection.
+//	If a user is working with a for loop, they cannot modernize(add/remove) the Collection,
+//	whereas, if they use the Java Iterator, they can simply update the Collection.
 	public static void main(String[] args) {
 
 		List l = new ArrayList();
@@ -69,12 +70,12 @@ public class IteratorDemo {
 //		To overcome these limitations sun people introduced listIterator concept.
 	
 //	ListIterator is the child interface of Iterator.
-//	By using listIterator we can move either to the forward direction (or) to the backward direction that is it is a bi-directional cursor.
+//	By using listIterator we can move either to the forward direction (or) to the backward direction that it is a bi-directional cursor.
 //	While iterating by listIterator we can perform replacement and addition of new objects in addition to read and remove operations
 	
-//	Iterator must be used to access the data present within the Collection. Iterator Object is invokved by calling iterator method.
+//	Iterator must be used to access the data present within the Collection. Iterator Object is invoked by calling iterator method.
 //
-//	FailFast: If we use Iterator to access the data present within collection and if we attempt for concurrent modification than it will lead to Exception and program will fail(No concurrent modification) 
+//	FailFast: If we use Iterator to access the data present within collection and if we attempt for concurrent modification, then it will lead to Exception and program will fail(No concurrent modification)
 //
 //	FailSafe: If we want to achive failsafe we must use classes present in java.util.concurrent package example: CopyOnWriteArrayList and so on....
 //		If concurrent modification is attempted program will fail safe without leading to an Exception ( No Exception No concurrent modification)

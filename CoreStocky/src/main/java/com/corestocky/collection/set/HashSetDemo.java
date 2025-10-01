@@ -1,12 +1,13 @@
 package com.corestocky.collection.set;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class HashSetDemo {
 //	public class HashSet<E> extends AbstractSet<E> implements Set<E>, Cloneable, Serializable
 
 
-//	The underlying data structure is Hashtable. ???????????
+//	The underlying data structure is Hashtable. ??????????? (hash collision in hashmap)
 //	HashSet stores the elements by using a mechanism called hashing.
 //	HashSet contains unique elements only.(Duplicates not allowed)
 //	If we are trying to insert duplicate objects we won't get compile time error and runtime error add() method simply returns false.
@@ -18,8 +19,9 @@ public class HashSetDemo {
 // Here we can't predict the output.
 
 	public static void main(String[] args) {
-		
-		HashSet<String> hs = new HashSet<String>();
+
+
+		Set<String> hs = new HashSet<String>();
 		hs.add("Zebra");
 		System.out.println("Ist time null value: "+hs.add(null));
 		System.out.println("Duplicate value: "+hs.add("Zebra"));

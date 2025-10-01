@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:context="http://www.springframework.org/schema/context" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd"> 
+
+ <bean id="std1" class="com.learning.beans.Student">
+ 
+ <constructor-arg  value="01"/>
+ <constructor-arg  value="Rohan"/>
+ <constructor-arg  value="Bengaluru"/>
+ <constructor-arg  value="45.4f"/>
+ </bean>   
+ 
+ 
+  <bean id="std2" class="com.learning.beans.Student">
+ 
+ <constructor-arg  index="2" value="Mumbai"/>
+ <constructor-arg index="1" value="Rohit"/>
+ <constructor-arg  index="0" value="02"/>
+ <constructor-arg  index="3" value="45.4f"/>
+ </bean> 
+ 
+   <bean id="std3" class="com.learning.beans.Student">
+ 
+ <constructor-arg  name="addr" value="Delhi"/>
+ <constructor-arg name="name" value="Kohli"/>
+ <constructor-arg  name="id" value="03"/>
+ <constructor-arg  name="avg" value="55.4f"/>
+ </bean>  
+ 
+    <bean id="std4" class="com.learning.beans.Student">
+ 
+ <constructor-arg  name="addr" type="java.lang.String" value="Pune"/>
+ <constructor-arg  name="name"  type="java.lang.String" value="Iyer"/>
+ <constructor-arg   name="id" type="java.lang.Integer" value="04"/>
+ <constructor-arg   name="avg" type="java.lang.Float" value="34.4f"/>
+ </bean> 
+        
+</beans>

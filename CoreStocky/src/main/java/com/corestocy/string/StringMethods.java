@@ -31,7 +31,7 @@ public class StringMethods {
 		String ui=null;
 		System.out.println("empty: \n"+u.isEmpty());
 //		System.out.println("null:"+ui.isEmpty()); //NullPointerException
-		System.out.println("== :"+ui==null);
+		System.out.println("ui==null: "+ (ui==null));//true
 
 		String str = "Hello World";
 

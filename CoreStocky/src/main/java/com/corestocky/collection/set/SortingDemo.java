@@ -48,12 +48,12 @@ class Employee1 {
 
 }
 
-//Method1 for implementing comparator interface
+//Methodology 1:  for implementing comparator interface
 class MyComparator1 implements Comparator<Employee1> {
 
     public int compare(Employee1 emp1, Employee1 emp2) {
-        if (emp1.empId > emp2.empId) return +1;
-        else return -1;
+        if (emp1.empId > emp2.empId) return 1;
+        else return -200;
     }
 }
 
@@ -74,6 +74,31 @@ public class SortingDemo {
         System.out.println(l);
         MyComparator1 mc = new MyComparator1();
         Collections.sort(l, mc);
+
+Comparator<Employee1> comp = (Employee1 e11, Employee1 e22)->{
+    if (e11.empId > e22.empId)
+        return 1;
+    else
+        return -1;
+
+};
+// Methodology 2:
+//Comparator<Employee1> comp = (Employee1 emp1, Employee1 emp2) -> {
+//    if (emp2.empId > emp1.empId) {
+//        return 1;
+//    } else {
+//        return -1;
+//    }
+//};
+// Collections.sort(l, comp);
+
+////Methodology 3: for implementing comparator interface with the help of lambda expression
+//        Collections.sort(l, (Employee1 emp1, Employee1 emp2) -> {
+//        if (emp2.empId > emp1.empId)
+//        return 1;
+//         else
+//        return -1;
+//        });
         System.out.println("After sorting (emp1.empId > emp2.empId) ");
         System.out.println(l);
 

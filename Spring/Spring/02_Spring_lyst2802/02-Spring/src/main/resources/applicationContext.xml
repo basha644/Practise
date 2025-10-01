@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id ="qr" class="com.telusko.beans.QRCode"/>
+    
+    <bean id ="dc" class="com.telusko.beans.DebitCard"/>
+    
+     <bean id ="cc" class="com.telusko.beans.CreditCard"/>
+     
+     <bean id ="payment" class="com.telusko.beans.ProcessPayment">
+     
+ 
+          
+          
+         <!-- constructor injection -->
+         <constructor-arg ref="qr" name="pay"></constructor-arg>
+         
+     </bean>
+
+</beans>

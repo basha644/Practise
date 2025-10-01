@@ -1,0 +1,23 @@
+                     ***Tight Coupling***
+Tight coupling occurs when components are highly dependent on each other, with strong knowledge of each other's implementation details.
+Characteristics of Tight Coupling:
+
+Components have direct references to each other
+Changes in one component often require changes in other components
+Components are difficult to test in isolation
+Reusability is limited
+High maintenance cost
+
+                     ***Loose Coupling***
+Loose coupling refers to a design where components have minimal knowledge of each other and interact through well-defined interfaces.
+Characteristics of Loose Coupling:
+
+Components interact through abstractions (interfaces or abstract classes)
+Changes in one component rarely affect others
+Components are easily testable in isolation
+High reusability
+Lower maintenance cost
+Facilitates dependency injection
+
+
+

@@ -30,11 +30,11 @@ public class SortingDemo3 {
 
         //Method3 for implementing comparator interface with the help of lambda expression
         Collections.sort(l, (Employee1 emp1, Employee1 emp2) -> {
-            if (emp2.empId > emp1.empId) {
+            if (emp2.empId > emp1.empId)
                 return 1;
-            } else {
+             else
                 return -1;
-            }
+
         });
         System.out.println("After sorting (emp1.empId > emp2.empId) ");
         System.out.println(l);

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:c="http://www.springframework.org/schema/c"
+xmlns:context="http://www.springframework.org/schema/context" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd"> 
+
+
+  <bean id ="dob" class="java.util.Date" p:date="08" p:month="3" p:year="1994"/>
+<!--   <property name="date" value="08"></property>
+  <property name="month" value="03"></property>
+  <property name="year" value="1994"></property>
+  </bean> -->
+  <bean id ="depart" class="com.learning.beans.Department" c:depNo="24" c:dName="Springer"/>
+  
+  <bean id ="emp" class="com.learning.beans.Employee" p:id="1" p:name="Hyder" p:age="29" 
+  p:depart-ref="depart" p:dob-ref="dob"/>
+  
+ </beans>

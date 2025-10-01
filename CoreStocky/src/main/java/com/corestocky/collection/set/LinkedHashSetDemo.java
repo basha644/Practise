@@ -15,7 +15,7 @@ public class LinkedHashSetDemo {
 //	The initial default capacity of HashSet is 16, and the load factor is 0.75.
 	
 	
-//	Same as Hashtable with some changes that are
+//	Same as HashSet with some changes that are
 //	The underlying data structure is a combination of LinkedList and Hashtable.
 //	Insertion order is preserved.
 	

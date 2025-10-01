@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:context="http://www.springframework.org/schema/context" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd"> 
+<!-- 
+ <bean id="al" class="com.learning.beans.Alpha">
+ <property name="beta" ref="bt"></property>
+ </bean>
+ 
+ <bean id="bt" class="com.learning.beans.Beta">
+ <property name="alpha" ref="al"></property>
+ </bean>
+ -->
+ 
+ <!--  
+  <bean id="al" class="com.learning.beans.Alpha">
+ <constructor-arg name="beta" ref="bt"></constructor-arg>
+ </bean>
+ 
+   <bean id="bt" class="com.learning.beans.Beta">
+ <constructor-arg name="alpha" ref="al"></constructor-arg>
+ </bean>
+ -->
+ 
+   <bean id="al" class="com.learning.beans.Alpha">
+ <property name="beta" ref="bt"></property>
+ </bean>
+ 
+   <bean id="bt" class="com.learning.beans.Beta">
+ <constructor-arg name="alpha" ref="al"></constructor-arg>
+ </bean>
+ 
+ 
+ </beans>

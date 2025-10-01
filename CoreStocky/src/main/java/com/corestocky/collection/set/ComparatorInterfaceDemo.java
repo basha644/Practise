@@ -10,7 +10,7 @@ public class ComparatorInterfaceDemo {
 
 	public static void main(String[] args) {
 //		 TreeSet ts = new TreeSet(); NothingBut  TreeSet ts = new TreeSet(n)
-		TreeSet t = new TreeSet(new MyComparator1());
+		TreeSet t = new TreeSet(new MyComparator());
 
 		t.add(10);
 		t.add(0);

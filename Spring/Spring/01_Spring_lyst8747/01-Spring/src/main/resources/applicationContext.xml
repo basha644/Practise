@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id ="sb" class="com.telusko.beans.SpringBoot"/>
+    
+    <bean id ="java" class="com.telusko.beans.Java"/>
+    
+     <bean id ="hb" class="com.telusko.beans.Hibernate"/>
+     
+     <bean id ="select" class="com.telusko.beans.CourseSelecting">
+     
+         <!-- setter injection -->
+         <property ref="sb" name="course"></property>
+          
+          
+         <!-- constructor injection -->
+         <constructor-arg ref="hb" name="course"></constructor-arg>
+         
+     </bean>
+
+</beans>
