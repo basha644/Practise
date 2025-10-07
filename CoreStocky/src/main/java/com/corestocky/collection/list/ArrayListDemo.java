@@ -17,12 +17,18 @@ public class ArrayListDemo {
 		// In ArrayList, manipulation is a little bit slower than the LinkedList in Java because
 		// a lot of shifting needs to occur if any element is removed from the array list.
 		//More suitable to perform insertion operation rear end(last end)
-		
-		
+
+/*		Why ArrayList get(index) is O(1) in Java — Interview Explanation
+
+		The core reason ArrayList in Java provides constant time, O(1), access to any element by index lies in its underlying data structure — a simple array.
+		Internally, an ArrayList uses an Object[] array to store elements sequentially in memory.
+		Since arrays allow direct access to any position via its index, retrieving an element is just a matter of calculating the memory address offset and returning the value.
+		This calculation is performed in constant time regardless of the size of the list.*/
+
 		List l =new ArrayList();// using l we can access only list methods.
                                 // But we can override list methods.
 		
-		ArrayList al = new ArrayList(); 
+		ArrayList al = new ArrayList();
 		// using al we can access both list and arraylist methods.
 		// But we can't override list methods. Bcz we're taking reference as child class.
 		//Default capacity:10 if reaches max limit then New capacity=(current capacity*3/2)+1
