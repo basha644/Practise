@@ -52,4 +52,15 @@ Low memory overhead required	              Better choice	                       
 Conclusion,
 Use ArrayList when frequent access to elements is required or when memory efficiency is critical.
 Use LinkedList when frequent insertions or deletions at arbitrary positions are required.
+
+ArrayList supports fast random access with get() in constant time O(1) by using an internal array, which allows direct index-based retrieval.
+LinkedList requires sequential traversal from the start or end to find an element by index, leading to linear time O(n) complexity for get() operations.
+
+ArrayList is more cache-friendly because it stores elements in contiguous memory locations, leading to better CPU cache utilization and fewer cache misses.
+
+LinkedList nodes are scattered in memory due to their pointer-based structure, causing poorer cache locality and more memory overhead because of storing pointers for previous and next nodes.
+
+Although LinkedList can insert and delete elements faster in some scenarios (especially at the beginning or when modifying an existing iterator), these advantages rarely outweigh the typical need for fast indexed access.
+
+ArrayList uses less memory overall since it doesn’t require storing the link pointers used by LinkedList.
 */
