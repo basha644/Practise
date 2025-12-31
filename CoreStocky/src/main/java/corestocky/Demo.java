@@ -26,7 +26,17 @@ public class Demo {
 		} catch (Exception e) {
 			System.out.println("Exception caught: " + e);
 		}
+
+        for(int i=0; i<5; i++){
+
+        }
+		int[] arr = new int[0];
+		for(int ar: arr){
+            System.out.println(ar);
+        }
 	}
+
+
 
 
 }
